@@ -9,31 +9,7 @@ body {
     height: 300rem;
 }
 
-/*
-============================
- Navigation Bar Transition
-============================
-*/
-.scrollOn{
-    /* padding-left: 30px; */
-    /* padding-right: 30px; */
-    background-color: #E1ad01;
 
-    transition: ease .5s;
-    
-}
-.scrollOn .logo a{
-    text-decoration: none;
-    color: #313131;
-}
-.scrollOn nav a{
-    text-decoration: none;
-    color: #313131;
-}
-.scrollOn .icons a{
-    text-decoration: none;
-    color: #313131;
-}
 
 
 /*
@@ -75,7 +51,7 @@ body {
 }
 .logo a{
     text-decoration: none;
-    color: #313131;
+    color: white;
 }
 .logo a:hover{
     color: rgb(63, 63, 63);
@@ -90,7 +66,7 @@ nav a{
     font-size: 23px;
     font-weight: 500;
 
-    color: black;
+    color: white;
 
     padding: 20px;
 }
@@ -98,17 +74,42 @@ nav a{
     padding-left: 35px;
     font-size: 35px;
 
-    color: black;
+    color: white;
     
 }
 
+/*
+============================
+ Navigation Bar Transition
+============================
+*/
+.scrollOn{
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
+    background-color: rgb(255, 255, 255);
+    transition: ease .5s;
+    
+}
+.scrollOn .logo a{
+    text-decoration: none;
+    color: #313131;
+}
+.scrollOn nav a{
+    text-decoration: none;
+    color: #313131;
+}
+.scrollOn .icons a{
+    text-decoration: none;
+    color: #313131;
+}
+
 .icons a:hover{
-    color: rgb(63, 63, 63);
-    transition: ease 0.5s;
+    color: #E1ad01;
+    transition: ease 0.3s;
 }
 nav a:hover{
-    color:  rgb(63, 63, 63);
-    transition: ease 0.5s;
+    color:  #E1ad01;
+    transition: ease 0.3s;
 }
 
 
