@@ -30,8 +30,8 @@ body {
     justify-content: space-between;
 
 
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: auto;
     height: 15vh;
     margin-top: 0;
@@ -71,7 +71,7 @@ nav a{
     padding: 20px;
 }
 .icons a{
-    padding-left: 35px;
+    padding-left: 55px;
     font-size: 35px;
 
     color: white;
