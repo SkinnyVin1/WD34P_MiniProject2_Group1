@@ -7,6 +7,7 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     height: 300rem;
+    scroll-behavior: smooth;
 }
 
 
@@ -155,6 +156,29 @@ nav a:hover{
 */
 
 .heroWrapper{
-    height: 40rem;
+    display: flex;
+    /* justify-items: center; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* height: 50rem; */
     background-color: #E1ad01;
 }
+.menuHere {
+    width: 100%;
+}
+.brokenLine{
+    text-align: center;
+}
+.menuLink a{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 500;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.menuLink a:hover{
+    color:  rgb(63, 63, 63);;
+    transition: all ease 0.3s;
+}
+
