@@ -163,6 +163,7 @@ nav a:hover{
     align-items: center;
     /* height: 50rem; */
     background-color: #E1ad01;
+    width: 100%;
 }
 .menuHere {
     width: 100%;
@@ -170,6 +171,7 @@ nav a:hover{
 .brokenLine{
     text-align: center;
 }
+
 .menuLink a{
     text-align: center;
     text-transform: uppercase;
