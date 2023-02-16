@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    height: 300rem;
+    /* height: 300rem; */
     scroll-behavior: smooth;
 }
 
@@ -34,7 +34,7 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     width: auto;
-    height: 10vh;
+    height: 11vh;
     margin-top: 0;
     z-index: 1000;
     
@@ -174,6 +174,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
 }
+
 .menuHere {
     width: 100%;
 }
@@ -187,9 +188,101 @@ nav a:hover{
     font-size: 500;
     text-decoration: none;
     color: whitesmoke;
+   
 }
 .menuLink a:hover{
     color:  rgb(63, 63, 63);;
     transition: all ease 0.3s;
 }
 
+
+/*
+=======================
+Newspaper Section
+=======================
+*/
+
+.newsPaperSection{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+
+    height: 20vh;
+    margin-top: 10px;
+    background-color: #E1ad01;
+}
+
+.newsPaperSection .newsDesc h1{
+    margin:0;
+}
+.newsForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.newsForm input{
+    
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    /* padding-left: 10px ; */
+}
+
+.newsForm button{
+    border:none;
+    border-radius:5px;
+    height: 50px;
+    width: 200px;
+    padding-left: 10px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+
+}
+
+.newsForm button i{
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+/* 
+========================
+Footer Section
+========================
+*/
+
+footer{
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-items: center;
+    align-items: center;
+
+    background: #313131;
+    height: 35rem;
+}
+
+footer .logos h1 a{
+    text-decoration: none;
+    color: white;
+    
+}
+footer .logos h1{
+    line-height: 80%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* text-justify: center; */
+
+    font-style: italic;
+    font-size:50px;
+}
