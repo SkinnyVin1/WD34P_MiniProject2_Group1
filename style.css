@@ -168,13 +168,20 @@ nav a:hover{
     align-items: center;
     /* height: 50rem; */
     background-color: #E1ad01;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .heroImg{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.heroImg img{
+    width: 100%;    
+    margin: auto;
+    text-align: center;
+    
 }
 
 .menuHere {
