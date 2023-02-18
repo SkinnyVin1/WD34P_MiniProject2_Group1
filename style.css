@@ -502,3 +502,9 @@ Intro Section
     -webkit-box-shadow: -1px -1px 13px 4px rgba(0,0,0,0.29);
     -moz-box-shadow: -1px -1px 13px 4px rgba(0,0,0,0.29);;
 }
+
+.location{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
