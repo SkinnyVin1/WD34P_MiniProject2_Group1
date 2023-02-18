@@ -161,6 +161,7 @@ nav a:hover{
 */
 
 .heroWrapper{
+    overflow: hidden;
     height: 85vh;
     display: flex;
     /* justify-items: center; */
@@ -181,8 +182,7 @@ nav a:hover{
 .heroImg img{
     width: 100%; 
     height: auto;   
-    margin: auto;
-    text-align: center;
+    padding-bottom: 2%;
     
 }
 
@@ -357,7 +357,13 @@ footer h3{
     Reservation Style
 ============================
 */
-
+.body-content{
+    height: 85vh;
+    display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;  
+}
 .reserveHeading{
     text-align: center;
     width: 50rem;
@@ -365,7 +371,7 @@ footer h3{
 }
 .reserveDetail{
     width: 85%;
-    margin: auto;
+    /* margin: auto; */
 }
 .reserveContent{
     display: grid;
@@ -476,6 +482,7 @@ Intro Section
     padding: 6%;
     padding-left: 0;
 }
+
 .intro-content button{
     width: 9rem;
     height: 3rem;
