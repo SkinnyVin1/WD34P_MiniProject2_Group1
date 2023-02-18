@@ -161,6 +161,7 @@ nav a:hover{
 */
 
 .heroWrapper{
+    height: 85vh;
     display: flex;
     /* justify-items: center; */
     /* display: flex; */
@@ -178,7 +179,8 @@ nav a:hover{
     
 }
 .heroImg img{
-    width: 100%;    
+    width: 100%; 
+    height: auto;   
     margin: auto;
     text-align: center;
     
@@ -285,6 +287,10 @@ footer{
     background-color: #1b1b1b;
     color: white;
 }
+footer h3{
+    color:#E1ad01;
+    font-size: 1.3rem;
+}
 
 .logos{
     display: flex;
@@ -336,6 +342,11 @@ footer{
         justify-content:center;  
         text-align: start;
         
+}
+.follow i{
+    font-size: 1.5rem;
+    padding: 10px;
+    /* color: #E1ad01; */
 }
 
 
@@ -421,4 +432,66 @@ footer{
 }
 .contactDirectly h3, .contactDirectly p{
     margin: 0;
+}
+
+/* 
+============================
+Intro Section
+============================
+*/
+.intro{
+    /* overflow: hidden; */
+    padding: 5%;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 40% 60% ;
+}
+.intro-image{
+    display: flex;
+    align-items:center;
+    justify-content:center;  
+}
+.intro .intro-image img{
+    max-width: 60%;
+  height: auto;
+}
+.intro-content{
+    display: flex;
+        flex-direction: column;
+        justify-content:center;  
+        text-align: start;
+
+        padding: 3%;
+}
+.intro-content h1{
+    font-style: italic;
+    font-size: 2.5rem;
+}
+.intro-content p{
+    font-size: 1.3rem;
+}
+.counter-wrapper{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 6%;
+    padding-left: 0;
+}
+.intro-content button{
+    width: 9rem;
+    height: 3rem;
+
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
+    background-color: #E1ad01;
+}
+.intro-content button:hover{
+    transition: .3s ease;
+    color: #E1ad01;
+    font-size: medium;
+    font-style: bold;
+    background-color: white;
+    box-shadow: -1px -1px 13px 4px rgba(0,0,0,0.29);
+    -webkit-box-shadow: -1px -1px 13px 4px rgba(0,0,0,0.29);
+    -moz-box-shadow: -1px -1px 13px 4px rgba(0,0,0,0.29);;
 }
