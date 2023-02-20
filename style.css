@@ -569,7 +569,7 @@ legend{
 }
 .franchiseInputBox label{
     position: absolute !important;
-    bottom: 29% !important;
+    bottom: 34% !important;
     left: 2%;
     padding: 0 5px;
     pointer-events: none;
@@ -578,7 +578,7 @@ legend{
 }
 .franchiseInputBox input:valid ~ label,
 .franchiseInputBox input:focus ~ label{
-    transform: translateY(-25px);
+    transform: translateY(-31px);
     background-color: white;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -588,7 +588,7 @@ legend{
 }
 .franchiseInputBox select:valid ~ label,
 .franchiseInputBox select:focus ~ label{
-    transform: translateY(-25px);
+    transform: translateY(-31px);
     background-color: white;
     border-left: 1px solid black;
     border-right: 1px solid black;
