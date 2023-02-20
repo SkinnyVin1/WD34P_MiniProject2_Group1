@@ -163,7 +163,7 @@ nav a:hover{
 
 .heroWrapper{
     /* overflow: hidden; */
-    height: 100vh;
+    height: 88vh;
     display: flex;
     /* justify-items: center; */
     /* display: flex; */
@@ -597,11 +597,11 @@ legend{
     color: black;
 }
 .franchiseInputBox select:focus{
-    box-shadow: 0 0 5px 5px rgb(251, 251, 100);
-    border-color: rgba(0, 0, 0, 0.453);
+    box-shadow: 0 0 5px 5px #E1ad01;
+    border-color: rgba(0, 0, 0, 0.199);
 }
 .franchiseInputBox input:focus{
-    box-shadow: 0 0 5px 5px rgb(251, 251, 100);
+    box-shadow: 0 0 5px 5px #E1ad01;
     border-color: rgba(0, 0, 0, 0.453);
 }
 
