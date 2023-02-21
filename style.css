@@ -652,8 +652,6 @@ Location
 .location{
     width: 90%;
     text-align: center;
-    display: grid;
-    grid-template-columns: 40% 60%;
     margin: auto;
 }
 input::-webkit-outer-spin-button,
@@ -751,8 +749,8 @@ legend{
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 700px;
-    height: 500px;
+    width: 1500px;
+    height: 600px;
     margin: auto;
     overflow: hidden;
     border-radius: 50px;
@@ -760,8 +758,8 @@ legend{
 .mapLocation::before{
     content: "";
     position: absolute;
-    height: 1470px;
-    width: 1450px;
+    height: 1900px;
+    width: 1900px;
     background-image: conic-gradient(transparent, transparent, transparent, #E1ad01);
 }
 .mapLocation.mapActive::before{
@@ -777,8 +775,9 @@ legend{
 }
 .theMapLocation{
     position: absolute;
-    width: 1340px;
-    height: 490px;
+    height: 590px;
+    width: 1490px;
+    margin: auto;
     background-color: white;
     border-radius: 50px
 }
