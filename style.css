@@ -553,10 +553,8 @@ Location
 .location{
     width: 90%;
     text-align: center;
-    margin: auto;
-}
-.franchise{
-    width: 90%;
+    display: grid;
+    grid-template-columns: 40% 60%;
     margin: auto;
 }
 input::-webkit-outer-spin-button,
@@ -654,8 +652,8 @@ legend{
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 700px;
     height: 500px;
-    width: 1350px;
     margin: auto;
     overflow: hidden;
     border-radius: 50px;
