@@ -43,6 +43,20 @@ body {
     
 
 }
+.logo{
+    animation: logoEnt 0.8s ease 0s 1 normal forwards;
+}
+@keyframes logoEnt {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
 .logo h1{
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -64,6 +78,18 @@ body {
 }
 nav{
     padding: 10px;
+    animation: navEnt 0.8s ease 0s 1 normal forwards;
+}
+@keyframes navEnt {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 nav a{
     text-decoration: none;
@@ -74,6 +100,20 @@ nav a{
     color: white;
 
     padding: 30px;
+}
+.icons{
+    animation: iconsEnt 0.8s ease 0s 1 normal forwards;
+}
+@keyframes iconsEnt {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 .icons a{
     padding-left: 55px;
@@ -172,6 +212,22 @@ nav a:hover{
     /* height: 50rem; */
     background-color: #E1ad01;
     /* width: 100%; */
+
+}
+.heroImg{
+    animation: heroEnt 0.8s ease 0s 1 normal forwards;
+
+}
+@keyframes heroEnt {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .heroImg{
@@ -193,7 +249,20 @@ nav a:hover{
 .brokenLine{
     text-align: center;
 }
+.menuLink{
+    animation: menuEnt 0.8s ease 0s 1 normal forwards;
+}
+@keyframes menuEnt {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
 
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 .menuLink a{
     text-align: center;
     text-transform: uppercase;
