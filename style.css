@@ -572,6 +572,36 @@ Intro Section
     max-width: 60%;
   height: auto;
 }
+.intro-image img:hover{
+    animation: imageAnimation 10s ease 0s infinite normal forwards;
+}
+@keyframes imageAnimation {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
+}
 .intro-content{
     display: flex;
         flex-direction: column;
@@ -812,6 +842,34 @@ PHONE ORDER SECTION
   max-height: 100%;
   max-width: 100%;
 }
+.phoneImage img:hover{
+    animation: phoneEnt 2s ease 0s infinite normal forwards;
+}
+@keyframes phoneEnt {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
 .phoneTextContent{
     width: 45%;
     text-align: end;
@@ -844,6 +902,18 @@ PHONE ORDER SECTION
     font-style: italic;
     /* text-align: start; */
     /* padding-left: 40px; */
+}
+.phoneTextContent button:hover{
+    animation: buttonAnimation .2s ease 1 normal forwards;
+}
+@keyframes buttonAnimation {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
 }
 
 .phoneTextContent button i{
