@@ -26,6 +26,7 @@ body {
     top: 0;
     background-color: #E1ad01;
     z-index: 100;
+    overflow: hidden;
 }
 .navBar{
     display: flex;
@@ -650,9 +651,9 @@ Location
 ============================
 */
 .location{
-    width: 90%;
     text-align: center;
     margin: auto;
+    position: relative;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -682,8 +683,8 @@ legend{
     row-gap: 30px;
     margin: 20px auto;
 }
-.franchiseForm .franchiseInputBox{
-    position: relative;
+.location div fieldset .franchiseForm .franchiseInputBox{
+    position: relative !important;
 }
 .franchiseInputBox input, .franchiseInputBox select{
     outline: none;
@@ -704,9 +705,8 @@ legend{
 }
 .franchiseBtn button{
     width: 15rem;
-    height: 7vh;
 }
-.franchiseInputBox label{
+.location div fieldset .franchiseForm .franchiseInputBox .somethingelse{
     position: absolute;
     bottom: 34%;
     left: 2%;
@@ -715,9 +715,9 @@ legend{
     color: rgba(0, 0, 0, 0.429);
     transition: 0.3s;
 }
-.franchiseInputBox input:valid ~ label,
-.franchiseInputBox input:focus ~ label{
-    transform: translateY(-31px);
+.franchiseInputBox input:valid ~ .somethingelse,
+.franchiseInputBox input:focus ~ .somethingelse{
+    transform: translateY(-30px);
     background-color: white;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -725,9 +725,9 @@ legend{
     letter-spacing: 0.2rem;
     color: black;
 }
-.franchiseInputBox select:valid ~ label,
-.franchiseInputBox select:focus ~ label{
-    transform: translateY(-31px);
+.franchiseInputBox select:valid ~ .somethingelse,
+.franchiseInputBox select:focus ~ .somethingelse{
+    transform: translateY(-30px);
     background-color: white;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -743,7 +743,6 @@ legend{
     box-shadow: 0 0 5px 5px #E1ad01;
     border-color: rgba(0, 0, 0, 0.453);
 }
-
 .mapLocation{
     display: flex;
     justify-content: center;
@@ -753,7 +752,6 @@ legend{
     height: 600px;
     margin: auto;
     overflow: hidden;
-    border-radius: 50px;
 }
 .mapLocation::before{
     content: "";
@@ -761,6 +759,11 @@ legend{
     height: 1900px;
     width: 1900px;
     background-image: conic-gradient(transparent, transparent, transparent, #E1ad01);
+    transition: 2s ease;
+}
+.mapLocation.mapBorder::before{
+    background: #E1ad01 !important;
+    transition: 2s ease;
 }
 .mapLocation.mapActive::before{
     animation: rotate 5s linear infinite;
@@ -773,13 +776,19 @@ legend{
         transform: rotate(360deg);
     }
 }
+.mapVisit{
+    background-color: ;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: inline-block;
+}
 .theMapLocation{
     position: absolute;
     height: 590px;
     width: 1490px;
     margin: auto;
     background-color: white;
-    border-radius: 50px
+    overflow: hidden;
 }
 .franchiseCrown h1{
     font-size: 7rem;
@@ -803,6 +812,61 @@ input.larger{
 }
 .franchiseCheckBox label{
     margin-left: -40px;
+}
+.locationBurger{
+    position: absolute;
+    top: 17%;
+    left: 4.5%;
+    row-gap: 52px;
+    display: none;
+}
+.locationBurger h1{
+    font-size: 3rem;
+    margin: 0;
+    color: #E1ad01;
+}
+.locationKingdom{
+    position: absolute;
+    top: 17%;
+    right: 4.5%;
+    row-gap: 30px;
+    display: none;
+}
+.locationKingdom h1{
+    font-size: 3rem;
+    margin: 0;
+    color: #E1ad01;
+}
+.forward{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.forwardDiv{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+}
+.forwardDiv h1{
+    margin: 0;
+}
+.forward i{
+    font-size: 3rem;
+    color: #E1ad01;
+}
+.forwardDiv:hover i{
+    animation: left 0.4s linear infinite;
+}
+@keyframes left{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(20px);
+    }
 }
 /*
 ====================== 
