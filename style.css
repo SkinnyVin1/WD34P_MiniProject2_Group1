@@ -25,6 +25,7 @@ body {
     width:100%;
     top: 0;
     background-color: #E1ad01;
+    transition: ease-in-out .1s;
     z-index: 100;
     overflow: hidden;
 }
@@ -869,15 +870,6 @@ input.larger{
     }
 }
 /*
-====================== 
-Menu Style
-======================
-*/
-
-.menuContainer{
-    height: 90vh;
-    background-color: #E1ad01;
-}
 
 /*
 ====================== 
@@ -891,11 +883,11 @@ PHONE ORDER SECTION
     justify-items: center;
     align-items: center;
 
-    height: 85vh;
+    height: 90vh;
     padding: 20px;
 }
 .phoneImage{
-    height: 100%;
+    height: 80%;
 }
 .phoneImage img{
     width: auto;
@@ -994,7 +986,142 @@ font-size: 4rem;
 Testimonials
 =============================
 */
-.testimonials{
-    height: 50vh;
-    background-color: #313131;
+.testimonialsWrapper{
+    padding: 0;
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1497644083578-611b798c60f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.titleTest{
+    padding: 0;
+    background-color: #313131ad;
+}
+.titleTest h1{
+    color: white;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+.testimonials {
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #313131ad;
+       /* padding-top: 20px; */
+    /* background-color: #e1ad0171; */
+  }
+  
+  .testimonial {
+    width: 80%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.473);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .testimonial.active {
+    opacity: 1;
+  }
+  
+  .titleTest{
+    color:#1b1b1b;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .author {
+    font-style: italic;
+    text-align: right;
+  }
+  
+
+/* 
+====================
+MENU
+====================
+ */
+ .menuContainer {
+    height: 120vh;
+    background-color: #E1ad01;
+    /* overflow: hidden; */
+  }
+  
+  #containerDivision {
+    position: relative;
+    width: 90%; /* modify width as desired */
+    margin: 0 auto; /* horizontally center the element */
+    top: 50%; /* vertically center the element */
+    transform: translateY(-50%); /* vertically center the element */
+  }
+  
+  .divi {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    display: none;
+    top: 43%; /* vertically center the element */
+    left: 50%; /* horizontally center the element */
+    transform: translate(-50%, -57%); /* horizontally and vertically center the element */
+  }
+.active{
+    display: block;
+}
+.burgerContainer{
+    width: 100%;
+    height: 100%;
+
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+    justify-items: center;
+}
+.menubutton{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 100px; */
+
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    /* box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2); */
+    transition: 0.3s;
+    width: 80%;
+    padding-top: 20px;
+  }
+  
+  .card:hover {
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+    animation: cardAnimation .2s ease 1 normal forwards;
+  }
+  @keyframes cardAnimation {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
+  .container {
+    padding: 2px 16px;
+  }
