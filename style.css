@@ -25,6 +25,7 @@ body {
     width:100%;
     top: 0;
     background-color: #E1ad01;
+    transition: ease-in-out .1s;
     z-index: 100;
 }
 .navBar{
@@ -805,15 +806,6 @@ input.larger{
     margin-left: -40px;
 }
 /*
-====================== 
-Menu Style
-======================
-*/
-
-.menuContainer{
-    height: 90vh;
-    background-color: #E1ad01;
-}
 
 /*
 ====================== 
@@ -827,11 +819,11 @@ PHONE ORDER SECTION
     justify-items: center;
     align-items: center;
 
-    height: 85vh;
+    height: 90vh;
     padding: 20px;
 }
 .phoneImage{
-    height: 100%;
+    height: 80%;
 }
 .phoneImage img{
     width: auto;
@@ -996,3 +988,76 @@ Testimonials
   }
   
 
+/* 
+====================
+MENU
+====================
+ */
+ .menuContainer {
+    height: 120vh;
+    background-color: #E1ad01;
+    /* overflow: hidden; */
+  }
+  
+  #containerDivision {
+    position: relative;
+    width: 90%; /* modify width as desired */
+    margin: 0 auto; /* horizontally center the element */
+    top: 50%; /* vertically center the element */
+    transform: translateY(-50%); /* vertically center the element */
+  }
+  
+  .divi {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    display: none;
+    top: 43%; /* vertically center the element */
+    left: 50%; /* horizontally center the element */
+    transform: translate(-50%, -57%); /* horizontally and vertically center the element */
+  }
+.active{
+    display: block;
+}
+.burgerContainer{
+    width: 100%;
+    height: 100%;
+
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+    justify-items: center;
+}
+.menubutton{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 100px; */
+
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    /* box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2); */
+    transition: 0.3s;
+    width: 80%;
+    padding-top: 20px;
+  }
+  
+  .card:hover {
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+    animation: cardAnimation .2s ease 1 normal forwards;
+  }
+  @keyframes cardAnimation {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
+  .container {
+    padding: 2px 16px;
+  }
