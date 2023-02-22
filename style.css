@@ -778,7 +778,6 @@ legend{
     }
 }
 .mapVisit{
-    background-color: ;
     padding-top: 30px;
     padding-bottom: 20px;
     display: inline-block;
@@ -839,7 +838,6 @@ input.larger{
     color: #E1ad01;
 }
 .forward{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
