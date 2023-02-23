@@ -29,6 +29,15 @@ body {
     z-index: 100;
     overflow: hidden;
 }
+.wraperAddition{
+    position: fixed;
+    width:100%;
+    top: 0;
+    background-color: #3131316c;
+    transition: ease-in-out .1s;
+    z-index: 100;
+    overflow: hidden;
+}
 .navBar{
     display: flex;
     justify-items: center;
@@ -76,6 +85,10 @@ body {
 }
 .logo a:hover{
     color: rgb(63, 63, 63);
+    transition: ease .3s;
+}
+.wraperAddition .logo a:hover{
+    color: #E1ad01;
     transition: ease .3s;
 }
 nav{
@@ -128,8 +141,16 @@ nav a{
     color: rgb(63, 63, 63);
     transition: ease 0.3s;
 }
+.wraperAddition .icons a:hover{
+    color: #E1ad01;
+    transition: ease 0.3s;
+}
 nav a:hover{
     color:  rgb(63, 63, 63);
+    transition: ease 0.3s;
+}
+.wraperAddition nav a:hover{
+    color:  #E1ad01;
     transition: ease 0.3s;
 }
 
@@ -150,29 +171,61 @@ nav a:hover{
     transition: all ease .5s;
     
 }
+.scrollOnAdditional{
+    background-color: #E1ad01;
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.65);
+    transition: all ease .5s;
+    
+}
 .scrollOn .logo a{
     text-decoration: none;
     color: #3b3b3b;
+}
+.scrollOnAdditional .logo a{
+    text-decoration: none;
+    color: white;
 }
 .scrollOn nav a{
     text-decoration: none;
     color: #313131;
 }
+.scrollOnAdditional nav a{
+    text-decoration: none;
+    color: white;
+}
 .scrollOn .icons a{
     text-decoration: none;
     color: #313131;
+}
+.scrollOnAdditional .icons a{
+    text-decoration: none;
+    color: white;
 }
 .scrollOn .logo a:hover{
     text-decoration: none;
     color: #E1ad01;
 }
+.scrollOnAdditional .logo a:hover{
+    text-decoration: none;
+    color: #1b1b1b;
+}
 .scrollOn nav a:hover{
     text-decoration: none;
     color: #E1ad01;
 }
+.scrollOnAdditional nav a:hover{
+    text-decoration: none;
+    color: #1b1b1b;
+}
 .scrollOn .icons a:hover{
     text-decoration: none;
     color: #E1ad01;
+}
+.scrollOnAdditional .icons a:hover{
+    text-decoration: none;
+    color: #1b1b1b;
 }
 
 
@@ -453,7 +506,7 @@ footer h3{
     width: 100%;
     height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.612);
+    background-color: #59595955;
     color: white;
 }
 .banner .imageContainer .textContainer .txtContent{
@@ -749,8 +802,8 @@ legend{
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 1500px;
-    height: 600px;
+    width: 1700px;
+    height: 650px;
     margin: auto;
     overflow: hidden;
 }
@@ -784,10 +837,10 @@ legend{
 }
 .theMapLocation{
     position: absolute;
-    height: 590px;
-    width: 1490px;
+    height: 640px;
+    width: 1690px;
     margin: auto;
-    background-color: white;
+    background-color: #E1ad01;
     overflow: hidden;
 }
 .franchiseCrown h1{
@@ -813,35 +866,14 @@ input.larger{
 .franchiseCheckBox label{
     margin-left: -40px;
 }
-.locationBurger{
-    position: absolute;
-    top: 17%;
-    left: 4.5%;
-    row-gap: 52px;
-    display: none;
-}
-.locationBurger h1{
-    font-size: 3rem;
-    margin: 0;
-    color: #E1ad01;
-}
-.locationKingdom{
-    position: absolute;
-    top: 17%;
-    right: 4.5%;
-    row-gap: 30px;
-    display: none;
-}
-.locationKingdom h1{
-    font-size: 3rem;
-    margin: 0;
-    color: #E1ad01;
-}
 .forward{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
 }
 .forwardDiv{
     display: flex;
@@ -857,7 +889,7 @@ input.larger{
     color: #E1ad01;
 }
 .forwardDiv:hover i{
-    animation: left 0.4s linear infinite;
+    animation: left 0.4s alternate-reverse infinite;
 }
 @keyframes left{
     0%{
