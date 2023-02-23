@@ -257,10 +257,9 @@ nav a:hover{
 */
 
 .heroWrapper{
-    /* overflow: hidden; */
     height: 88vh;
     display: flex;
-    /* justify-items: center; */
+    justify-items: center;
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -617,6 +616,7 @@ Intro Section
     height: 85vh;
     display: grid;
     grid-template-columns: 40% 60% ;
+    overflow: hidden;
 }
 .intro-image{
     display: flex;
@@ -1112,6 +1112,16 @@ MENU
   }
 .active{
     display: block;
+    animation: menuEnt 1s ease 0s 1 normal forwards;
+}
+@keyframes menuEnt {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 .burgerContainer{
     width: 100%;
