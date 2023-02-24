@@ -899,6 +899,14 @@ input.larger{
         transform: translateX(20px);
     }
 }
+@keyframes toTheLeft{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-3000px);
+    }
+}
 /*
 
 /*
