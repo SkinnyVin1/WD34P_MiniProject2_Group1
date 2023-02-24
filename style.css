@@ -707,6 +707,7 @@ Location
     text-align: center;
     margin: auto;
     position: relative;
+    width: 90%;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -718,8 +719,10 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 1700px;
-    height: 650px;
+    max-width: 1700px;
+    width: 100%;
+    max-height: 650px;
+    height: 100vh;
     margin: auto;
     overflow: hidden;
 }
@@ -749,12 +752,13 @@ input::-webkit-inner-spin-button {
 .mapVisit{
     padding-top: 30px;
     padding-bottom: 20px;
-    display: inline-block;
 }
 .theMapLocation{
     position: absolute;
-    height: 640px;
-    width: 1690px;
+    max-height: 640px;
+    height: 100%;
+    max-width: 1690px;
+    width: 99.5%;
     margin: auto;
     background-color: #E1ad01;
     overflow: hidden;
@@ -768,7 +772,7 @@ input::-webkit-inner-spin-button {
 .forward{
     display: grid;
     grid-template-columns: 50% 50%;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-between;
     margin: auto;
     padding-bottom: 30px;
