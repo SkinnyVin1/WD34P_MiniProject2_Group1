@@ -713,89 +713,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-fieldset{
-    width: 100%;
-    box-sizing: border-box;
-    margin: auto;
-    border: none;
-    border-top: 7px solid #E1ad01;
-    border-bottom: 7px solid #E1ad01;
-    border-radius: 50px;
-}
-legend{
-    text-align: left;
-    margin-left: 30px;
-    font-size: 1.4rem;
-    font-style: italic;
-    background-color: white;
-}
-.franchiseForm{
-    width: 70%;
-    text-align: center;
-    display: grid;
-    row-gap: 30px;
-    margin: 20px auto;
-}
-.location div fieldset .franchiseForm .franchiseInputBox{
-    position: relative !important;
-}
-.franchiseInputBox input, .franchiseInputBox select{
-    outline: none;
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    border: 2px solid black;
-    font-size: 1.2rem;
-    padding-top: 10px;
-    text-indent: 15px;
-}
-.franchiseInputBox select{
-    width: 101%;
-    height: 63px;
-}
-.franchiseBtn{
-    margin: auto;
-}
-.franchiseBtn button{
-    width: 15rem;
-}
-.location div fieldset .franchiseForm .franchiseInputBox .somethingelse{
-    position: absolute;
-    bottom: 34%;
-    left: 2%;
-    font-size: larger;
-    pointer-events: none;
-    color: rgba(0, 0, 0, 0.429);
-    transition: 0.3s;
-}
-.franchiseInputBox input:valid ~ .somethingelse,
-.franchiseInputBox input:focus ~ .somethingelse{
-    transform: translateY(-30px);
-    background-color: white;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    box-shadow: 0 0 10px white;
-    letter-spacing: 0.2rem;
-    color: black;
-}
-.franchiseInputBox select:valid ~ .somethingelse,
-.franchiseInputBox select:focus ~ .somethingelse{
-    transform: translateY(-30px);
-    background-color: white;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    box-shadow: 0 0 10px white;
-    letter-spacing: 0.2rem;
-    color: black;
-}
-.franchiseInputBox select:focus{
-    box-shadow: 0 0 5px 5px #E1ad01;
-    border-color: rgba(0, 0, 0, 0.199);
-}
-.franchiseInputBox input:focus{
-    box-shadow: 0 0 5px 5px #E1ad01;
-    border-color: rgba(0, 0, 0, 0.453);
-}
 .mapLocation{
     display: flex;
     justify-content: center;
@@ -842,69 +759,128 @@ legend{
     background-color: #E1ad01;
     overflow: hidden;
 }
-.franchiseCrown h1{
-    font-size: 7rem;
-    margin: 0;
-    padding: 0;
-}
-.franchiseCrown{
-    margin-top: -50px;
-}
-.franchiseCheckBox{
-    height: 7vh;
-    text-align: left;
-    font-size: larger;
-    display: flex;
-    align-items: center;
-    margin-top: -20px;
-}
-input.larger{
-    width: 10%;
-    height: 40%;
-}
-.franchiseCheckBox label{
-    margin-left: -40px;
+
+.franchise{
+    text-align: center;
+    width: 89%;
+    margin: auto;
 }
 .forward{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* align-items: center; */
+    justify-content: space-between;
     margin: auto;
     padding-bottom: 30px;
 }
-.forwardDiv{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+.forward .franchiseBtn{
+    width: 200px;
+    height: 50px;
+
+    border: none;
+    background-color: #595959;
+    color: white;
+    border-radius: 10px;
+
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
     cursor: pointer;
 }
-.forwardDiv h1{
-    margin: 0;
+.forward .franchiseBtn:hover{
+    animation: buttonAnimation .2s ease 1 normal forwards;
+    transition: ease-in-out 0.2s;
+    background-color: #E1ad01;
+    color: #313131;
+    box-shadow: 0px 0px 28px 7px rgba(0,0,0,0.16);
 }
-.forward i{
-    font-size: 3rem;
+.forward div img{
+    width: 100%;
+}
+.franchiseApplication{
+    text-align: left;
+    width: 90%;
+}
+.franchiseForm{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    row-gap: 50px;
+    margin-bottom: 50px;
+}
+.franchiseForm div{
+    display: block;
+    position: relative;
+    margin-right: 10px;
+}
+.franchiseApplication .theSelect{
+    position: relative;
+    margin-right: 10px;
+}
+.franchiseForm div input{
+    height: 5vh;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 1.3rem;
+    text-indent: 20px;
+}
+.franchiseApplication .theSelect select{
+    width: 102%;
+    height: 5.6vh;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 1.3rem;
+    text-indent: 20px;
+}
+.franchiseForm div label{
+    position: absolute;
+    left: 3%;
+    bottom: 40%;
+    pointer-events: none;
+}
+.franchiseForm div input:valid ~ label,
+.franchiseForm div input:focus ~ label{
+    transform: translateY(-30px);
+    transition: 0.4s ease;
+    left: 0;
+}
+.franchiseForm div input:valid,
+.franchiseForm div input:focus,
+.franchiseForm div input:hover{
+    border-color: #E1ad01;
+}
+.theSelect label{
+    position: absolute;
+    left: 1.5%;
+    bottom: 55%;
+    pointer-events: none;
+}
+.franchiseApplication .theSelect select:valid ~ label,
+.franchiseApplication .theSelect select:focus ~ label{
+    transform: translateY(-30px);
+    transition: 0.4s ease;
+    left: 0;
+}
+.franchiseApplication .theSelect select:valid,
+.franchiseApplication .theSelect select:focus,
+.franchiseApplication .theSelect select:hover{
+    border-color: #E1ad01;
+}
+.LOI{
+    display: flex;
+    gap: 10px;
+}
+.LOI a{
+    color: blue;
+    cursor: pointer;
+}
+.LOI a:hover{
     color: #E1ad01;
-}
-.forwardDiv:hover i{
-    animation: left 0.4s alternate-reverse infinite;
-}
-@keyframes left{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(20px);
-    }
-}
-@keyframes toTheLeft{
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-3000px);
-    }
 }
 /*
 
