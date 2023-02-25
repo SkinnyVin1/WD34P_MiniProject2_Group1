@@ -156,6 +156,7 @@ nav a:hover{
 
 
 
+
 /*
 ============================
  Navigation Bar Transition
@@ -256,139 +257,100 @@ nav a:hover{
 ============================
 */
 
-.heroWrapper{
+.heroWrapper {
     height: 88vh;
     display: flex;
     justify-items: center;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    /* height: 50rem; */
     background-color: #E1ad01;
-    /* width: 100%; */
-
-}
-.heroImg{
+  }
+  
+  .heroImg {
     animation: heroEnt 0.8s ease 0s 1 normal forwards;
-
-}
-@keyframes heroEnt {
-	0% {
-		opacity: 0;
-		transform: translateY(250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-.heroImg{
-    display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-.heroImg img{
-    width: 100%; 
-    height: auto;   
-    padding-bottom: 2%;
-    
-}
-
-.menuHere {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @keyframes heroEnt {
+    0% {
+      opacity: 0;
+      transform: translateY(250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero img{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height : auto;
+  
+  }
+  
+  .menuHere {
     width: 100%;
-}
-.brokenLine{
+  }
+  
+  .brokenLine {
     text-align: center;
-}
-.menuLink{
+  }
+  
+  .menuLink {
     animation: menuEnt 0.8s ease 0s 1 normal forwards;
-}
-@keyframes menuEnt {
-	0% {
-		opacity: 0;
-		transform: translateY(-50px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-.menuLink a{
+  }
+  
+  @keyframes menuEnt {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .menuLink a {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.1rem;
     text-decoration: none;
     color: whitesmoke;
-   
-}
-.menuLink a:hover{
-    color:  rgb(63, 63, 63);
-    /* transition: all ease 0.3s; */
-    /* animation: arrowMenu .8s ease 0s infinite normal forwards; */
-}
-
+  }
+  
+  .menuLink a:hover {
+    color: rgb(63, 63, 63);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .heroWrapper {
+      height: 70vh;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .heroWrapper {
+      height: 60vh;
+    }
+  
+    .menuLink a {
+      font-size: 0.9rem;
+    }
+  }
 /*
 =======================
 Newspaper Section
 =======================
 */
 
-.newsPaperSection{
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-
-    height: 20vh;
-    margin-top: 10px;
-    background-color: #E1ad01;
-}
-
-.newsPaperSection .newsDesc h1{
-    margin:0;
-}
-.newsForm{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.newsForm input{
-    
-    border: none;
-    border-radius: 5px;
-    height: 50px;
-    width: 500px;
-    font-family: 'Montserrat', sans-serif;
-    padding-left: 20px;
-    margin-right: 20px;
-}
-
-::placeholder{
-    font-family: 'Montserrat', sans-serif;
-    /* padding-left: 10px ; */
-}
-
-.newsForm button{
-    border:none;
-    border-radius:5px;
-    height: 50px;
-    width: 200px;
-    padding-left: 10px;
-
-    font-family: 'Montserrat', sans-serif;
-    font-size: medium;
-
-}
-
-.newsForm button i{
-    padding-right: 5px;
-    font-size: 20px;
-}
 
 /* 
 ========================
@@ -450,7 +412,10 @@ footer h3{
     list-style: none;
     margin: auto;
     padding: 10px;
-    text-align: start;
+    /* text-align: start; */
+}
+.links ul{
+    padding: 0;
 }
 .contacts{
         display: flex;
@@ -626,9 +591,8 @@ Intro Section
 .intro .intro-image img{
     max-width: 60%;
   height: auto;
-}
-.intro-image img:hover{
-    animation: imageAnimation 10s ease 0s infinite normal forwards;
+
+  animation: imageAnimation 10s ease 0s infinite normal forwards;
 }
 @keyframes imageAnimation {
 	0%,
@@ -886,78 +850,15 @@ input::-webkit-inner-spin-button {
 .LOI a:hover{
     color: #E1ad01;
 }
-/*
 
 /*
 ====================== 
 PHONE ORDER SECTION
 ======================
 */
-.phoneWrapper{
-    display: flex;
-    justify-content: space-evenly;
-    overflow: hidden;
-    justify-items: center;
-    align-items: center;
-
-    height: 90vh;
-    padding: 20px;
-}
-.phoneImage{
-    height: 80%;
-}
-.phoneImage img{
-    width: auto;
-  height : auto;
-  max-height: 100%;
-  max-width: 100%;
-}
-.phoneImage img:hover{
-    animation: phoneEnt 2s ease 0s infinite normal forwards;
-}
-@keyframes phoneEnt {
-	0% {
-		transform: translate(0);
-	}
-
-	20% {
-		transform: translate(-2px, 2px);
-	}
-
-	40% {
-		transform: translate(-2px, -2px);
-	}
-
-	60% {
-		transform: translate(2px, 2px);
-	}
-
-	80% {
-		transform: translate(2px, -2px);
-	}
-
-	100% {
-		transform: translate(0);
-	}
-}
-.phoneTextContent{
-    width: 45%;
-    text-align: end;
-
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.phoneTextContent h1{
-    font-style:italic;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-}
-
-.phoneTextContent button{
-    width: 500px;
-    height: 120px;
+#phoneBtn{
+    width: 30rem;
+    height: 7rem;
     margin: 15px;
     margin-right:0;
 
@@ -970,34 +871,10 @@ PHONE ORDER SECTION
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-style: italic;
-    /* text-align: start; */
-    /* padding-left: 40px; */
 }
-.phoneTextContent button:hover{
-    animation: buttonAnimation .2s ease 1 normal forwards;
+#phoneBtn button i{
+    font-size: 7rem;
 }
-@keyframes buttonAnimation {
-	0% {
-		transform: scale(1);
-	}
-
-	100% {
-		transform: scale(1.1);
-	}
-}
-
-.phoneTextContent button i{
-font-size: 4rem;
-}
-.phoneTextContent button:hover{
-    transition: ease-in-out 0.2s;
-    background-color: #E1ad01;
-    color: #313131;
-    box-shadow: 0px 0px 28px 7px rgba(0,0,0,0.16);
-    
-
-}
-
 /*
 ===============================
 Testimonials
@@ -1207,6 +1084,7 @@ MENU
     font-size: 1.6rem;
 }
 .priceCart a:hover{
+    transition: 0.2s ease;
     color: white;
 }
 .priceCart{
