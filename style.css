@@ -444,15 +444,6 @@ footer h3{
     Reservation Style
 ============================
 */
-<<<<<<< HEAD
-=======
-.banner{
-    height: 45vh;
-    background-color: #1b1b1b98;
-    /* object-fit: cover; */
-    overflow: hidden;
-}
->>>>>>> 912eb12c86d2f2e0cc914e6aaea95ff7340e8abb
 .banner h1{
     color: white;
     text-align: center;
