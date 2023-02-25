@@ -483,7 +483,7 @@ footer h3{
 */
 .banner{
     height: 45vh;
-    background-color: #1b1b1b;
+    background-color: #1b1b1b98;
     /* object-fit: cover; */
     overflow: hidden;
 }
@@ -505,7 +505,7 @@ footer h3{
     width: 100%;
     height: 100%;
 
-    background-color: #59595955;
+    background-color: #424141c2;
     color: white;
 }
 .banner .imageContainer .textContainer .txtContent{
@@ -1082,7 +1082,7 @@ MENU
   
   #containerDivision {
     position: relative;
-    width: 90%; /* modify width as desired */
+    width: 80%; /* modify width as desired */
     margin: 0 auto; /* horizontally center the element */
     top: 50%; /* vertically center the element */
     transform: translateY(-50%); /* vertically center the element */
@@ -1152,6 +1152,7 @@ MENU
   .cardWrapper:hover {
     /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
     animation: arrowMenu .3s ease 0s 1 normal forwards;
+    border-radius: 10px;
   }
   @keyframes arrowMenu {
 	0% {
