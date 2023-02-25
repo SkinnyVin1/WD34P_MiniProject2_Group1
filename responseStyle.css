@@ -1,0 +1,308 @@
+/* 1st Section */
+/* For screens smaller than 768px (e.g. smartphones) */
+@media (max-width: 767px) {
+  .intro {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 10% 5%;
+  }
+  
+  .intro-image {
+    order: 1;
+    margin-bottom: 3rem;
+  }
+  
+  .intro .intro-image img {
+    max-width: auto;
+  }
+  
+  .intro-content {
+    order: 1;
+    text-align: center;
+  }
+  
+  .intro-content h1 {
+    font-size: 2rem;
+  }
+  
+  .counter-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin-top: 3rem;
+  }
+  
+  .count {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .intro-content button {
+    margin-top: 3rem;
+  }
+}
+
+/* For screens larger than 768px (e.g. tablets and desktops) */
+@media (min-width: 768px) {
+  .intro {
+    grid-template-columns: 40% 60%;
+    height: 85vh;
+    padding: 5%;
+  }
+  
+  .intro-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .intro .intro-image img {
+    max-width: 60%;
+  }
+  
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding: 3%;
+  }
+  
+  .intro-content h1 {
+    font-style: italic;
+    font-size: 2.5rem;
+  }
+  
+  .intro-content p {
+    font-size: 1.3rem;
+  }
+  
+  .counter-wrapper {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 6%;
+    padding-left: 0;
+  }
+  
+  .intro-content button {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: #E1ad01;
+    margin-top: 2rem;
+  }
+  
+  .intro-content button:hover {
+    transition: .3s ease;
+    color: #E1ad01;
+    font-style: bold;
+    background-color: white;
+    animation: menuBtnHover .3s ease 0s 1 normal forwards;
+  }
+}
+
+/* Phone Order */
+@media (max-width: 767px) {  
+    .phoneWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        padding: 20px;
+      }
+      
+      .phoneImage {
+        width: 80%;
+        max-width: 400px;
+      }
+      
+      .phoneImage img {
+        width: 100%;
+        height: auto;
+        animation: phoneEnt 2s ease 0s infinite normal forwards;
+      }
+      
+      @keyframes phoneEnt {
+        0% {
+          transform: translate(0);
+        }
+        20% {
+          transform: translate(-2px, 2px);
+        }
+        40% {
+          transform: translate(-2px, -2px);
+        }
+        60% {
+          transform: translate(2px, 2px);
+        }
+        80% {
+          transform: translate(2px, -2px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+      
+      .phoneTextContent {
+        width: 80%;
+        text-align: center;
+      }
+      
+      .phoneTextContent h1 {
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+      }
+      
+      .phoneTextContent button {
+        width: 100%;
+        max-width: 500px;
+        height: 120px;
+        margin: 15px;
+        margin-right: 0;
+        border: none;
+        background-color: #595959;
+        color: white;
+        border-radius: 10px;
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-style: italic;
+      }
+      
+      .phoneTextContent button:hover {
+        animation: buttonAnimation 0.2s ease 1 normal forwards;
+        transition: ease-in-out 0.2s;
+        background-color: #e1ad01;
+        color: #313131;
+        box-shadow: 0px 0px 28px 7px rgba(0, 0, 0, 0.16);
+      }
+      
+      @keyframes buttonAnimation {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.1);
+        }
+      }
+      
+      .phoneTextContent button i {
+        font-size: 4rem;
+      }
+      
+}
+
+
+/* NEWSPAPER SECTION */
+@media screen and (max-width: 768px) {
+    .newsPaperSection {
+    height: 100%;
+    flex-direction: column;
+    
+    }
+    #newsPaper{
+        height: 50vh;
+    }
+    
+    .newsPaperSection .newsDesc,
+    .newsPaperSection .newsForm {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .newsForm {
+    flex-direction: column;
+    }
+    
+    .newsForm input {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+    }
+    
+    .newsForm button {
+    width: 100%;
+    }
+    }
+    
+    .newsPaperSection {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    height: 20vh;
+    margin-top: 10px;
+    background-color: #E1ad01;
+    }
+    
+    .newsPaperSection .newsDesc h1 {
+    margin: 0;
+    }
+    
+    .newsForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .newsForm input {
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 20rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+    margin-right: 20px;
+    }
+    
+    ::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    }
+    
+    .newsForm button {
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    }
+    
+    .newsForm button i {
+    padding-right: 5px;
+    font-size: 20px;
+    }
+
+    /* Footer */
+    @media screen and (max-width: 768px) {
+        footer {
+        /* grid-template-columns: 1fr; */
+        /* grid-template-rows: auto auto auto auto; */
+        height: auto;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .logos, .links, .contacts, .follow {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .links li {
+            padding: 10px 0;
+        }
+        
+        .follow div:first-child {
+            margin-bottom: 10px;
+        }
+        
+        .follow i {
+            padding: 10px 5px;
+        }
+    }        
