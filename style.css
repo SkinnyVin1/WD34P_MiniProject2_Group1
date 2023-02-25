@@ -301,6 +301,10 @@ nav a:hover{
   }
   
   .menuLink {
+    /* display: flex;
+    justify-content: center; */
+    /* padding-top: 8%; */
+    /* transform: translateX(60%); */
     animation: menuEnt 0.8s ease 0s 1 normal forwards;
   }
   
@@ -906,6 +910,7 @@ Testimonials
 =============================
 */
 .testimonialsWrapper{
+    /* height: 60vh; */
     padding: 0;
     margin: 0;
     background-image: url(https://images.unsplash.com/photo-1497644083578-611b798c60f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
@@ -924,7 +929,7 @@ Testimonials
 }
 .testimonials {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -935,7 +940,7 @@ Testimonials
   
   .testimonial {
     width: 80%;
-    height: 70%;
+    height: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -945,7 +950,7 @@ Testimonials
     align-items: center;
     text-align: center;
 
-    background-color: rgba(255, 255, 255, 0.473);
+    background-color: rgba(255, 255, 255, 0.568);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -968,6 +973,7 @@ Testimonials
   .author {
     font-style: italic;
     text-align: right;
+    text-align: center;
   }
   
 
@@ -977,17 +983,18 @@ MENU
 ====================
  */
  .menuContainer {
-    height: 130vh;
+    height: 112vh;
     background-color: #E1ad01;
     overflow: hidden;
+    padding-bottom: 20px;
   }
   
   #containerDivision {
     position: relative;
     width: 80%; /* modify width as desired */
     margin: 0 auto; /* horizontally center the element */
-    top: 50%; /* vertically center the element */
-    transform: translateY(-50%); /* vertically center the element */
+    top: 55%; /* vertically center the element */
+    /* transform: translateY(-40%); vertically center the element */
     
   }
   
@@ -1021,15 +1028,21 @@ MENU
 
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
+    row-gap:40px;
     text-align: center;
     justify-items: center;
-    /* justify-content: space-around; */
+    overflow: scroll;
+
+}
+.price h3{
+    margin: 0;
+    text-align: start;
 }
 .menubutton{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* padding-top: 100px; */
+
 
     justify-items: center;
     align-items: center;
@@ -1037,43 +1050,44 @@ MENU
     padding-top: 50px;
 }
 .cardWrapper{
-    /* border: #1b1b1b solid; */
+
     display: flex;
     justify-content: center;
     width: 70%;
     height: auto;
+    border: rgba(255, 255, 255, 0.705) solid 5px;
+    border-radius: 10px;
 }
 .card {
-    /* box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2); */
+
     transition: 0.3s;
     width: 85%;
     height: 80%;
     padding-top: 15px;
-  }
+    /* padding-bottom:2px; */
+}
   
-  .cardWrapper:hover {
-    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+  .cardWrapper:hover .card img {
     animation: arrowMenu .3s ease 0s 1 normal forwards;
-    border-radius: 10px;
   }
   @keyframes arrowMenu {
 	0% {
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		/* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); */
 		transform: scale(1);
 	}
 
 	100% {
-		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-		transform: scale(1.05);
+		/* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); */
+		transform: scale(1.1);
 	}
 }
-  /* .container {
-    padding: 2px 16px;
-  } */
+  .container p{
+    font-size: .8rem;
+  }
   .menuBtn button{
     border: none;
-    width: 140px;
-    height: 50px;
+    width: 10rem;
+    height: 3.5rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-size: 1rem;
@@ -1106,7 +1120,7 @@ MENU
     margin: 0;
 }
 .priceCart i{
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 .priceCart a:hover{
     transition: 0.2s ease;
@@ -1117,3 +1131,18 @@ MENU
     justify-content: space-between;
     align-items: center;
 }
+.priceCart{
+    padding-bottom: 20px;
+  }
+  .priceCart button{
+    height: 2.5rem;
+    width: 7rem;
+
+    border: none;
+    background-color: #201f1f;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    border-radius: 5px;
+
+  }
