@@ -1075,7 +1075,7 @@ MENU
 ====================
  */
  .menuContainer {
-    height: 125vh;
+    height: 130vh;
     background-color: #E1ad01;
     overflow: hidden;
   }
@@ -1094,9 +1094,9 @@ MENU
     width: 100%;
     height: 800px;
     display: none;
-    top: 35%; /* vertically center the element */
+    top: 25%; /* vertically center the element */
     left: 50%; /* horizontally center the element */
-    transform: translate(-50%, -65%); /* horizontally and vertically center the element */
+    transform: translate(-50%, -75%); /* horizontally and vertically center the element */
   }
 .active{
     /* width: 100%;
@@ -1132,13 +1132,14 @@ MENU
     justify-items: center;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
 }
 .card {
     /* box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2); */
     transition: 0.3s;
     width: 60%;
     height: 80%;
-    padding-top: 20px;
+    padding-top: 15px;
   }
   
   .card:hover {
@@ -1154,9 +1155,9 @@ MENU
 		transform: scale(1.1);
 	}
 }
-  .container {
+  /* .container {
     padding: 2px 16px;
-  }
+  } */
   .menuBtn button{
     border: none;
     width: 140px;
@@ -1186,4 +1187,20 @@ MENU
 		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
 		transform: scale(1.1);
 	}
+}
+.menubutton h1{
+    font-size: 2.5rem;
+    font-style: italic;
+    margin: 0;
+}
+.priceCart i{
+    font-size: 1.6rem;
+}
+.priceCart a:hover{
+    color: white;
+}
+.priceCart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
