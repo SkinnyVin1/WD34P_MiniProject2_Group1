@@ -1087,9 +1087,9 @@ MENU
 ====================
  */
  .menuContainer {
-    height: 120vh;
+    height: 125vh;
     background-color: #E1ad01;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
   
   #containerDivision {
@@ -1098,6 +1098,7 @@ MENU
     margin: 0 auto; /* horizontally center the element */
     top: 50%; /* vertically center the element */
     transform: translateY(-50%); /* vertically center the element */
+    
   }
   
   .divi {
@@ -1110,6 +1111,8 @@ MENU
     transform: translate(-50%, -65%); /* horizontally and vertically center the element */
   }
 .active{
+    /* width: 100%;
+    height: auto; */
     display: block;
     animation: menuEnt 1s ease 0s 1 normal forwards;
 }
@@ -1127,9 +1130,10 @@ MENU
     height: 100%;
 
     display:grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
     justify-items: center;
+    /* justify-content: space-around; */
 }
 .menubutton{
     width: 100%;
@@ -1144,7 +1148,8 @@ MENU
 .card {
     /* box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2); */
     transition: 0.3s;
-    width: 80%;
+    width: 60%;
+    height: 80%;
     padding-top: 20px;
   }
   
