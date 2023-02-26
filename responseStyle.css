@@ -1,10 +1,25 @@
+/* hero */
+@media (max-width: 767px){
+  .heroWrapper{
+    height: 85vh;
+    display: flex ;
+  }
+  .menuLink{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    
+  }
+}
+
+
 /* 1st Section */
 /* For screens smaller than 768px (e.g. smartphones) */
 @media (max-width: 767px) {
   .intro {
     grid-template-columns: 1fr;
     height: auto;
-    padding: 10% 5%;
+    /* padding: 10% 5%; */
   }
   
   .intro-image {
@@ -40,7 +55,9 @@
     margin-top: 3rem;
   }
 }
-
+#aboutUs{
+  margin: 0;
+}
 /* For screens larger than 768px (e.g. tablets and desktops) */
 @media (min-width: 768px) {
   .intro {
@@ -253,7 +270,7 @@
     border: none;
     border-radius: 5px;
     height: 50px;
-    width: 20rem;
+    width: 22rem;
     font-family: 'Montserrat', sans-serif;
     padding-left: 20px;
     margin-right: 20px;
@@ -305,6 +322,7 @@
         .follow i {
             padding: 10px 5px;
         }
+<<<<<<< HEAD
     }   
 
 /* Location */
@@ -416,3 +434,106 @@
     margin-top: 40px;
   }
 }
+=======
+    }        
+
+    /* Testimonials */
+/* For screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .testimonials {
+    height: 70vh;
+  }
+
+  .testimonial {
+    width: 90%;
+    padding: 10px;
+  }
+}
+.testimonial img{
+  width: 60%;
+}
+
+/* For screens between 600px and 900px */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .testimonials {
+    height: 70vh;
+  }
+
+  .testimonial {
+    width: 70%;
+  }
+}
+.testimonial img{
+  width: 60%
+}
+
+/* For screens larger than 900px */
+@media screen and (min-width: 900px) {
+  .testimonials {
+    height: 60vh;
+  }
+
+  .testimonial {
+    width: 80%;
+  }
+  .testimonial img{
+    width: 20%
+  }
+}
+
+/* Menu */
+@media screen and (max-width: 767px) {
+  .menuContainer{
+    height: 1260px;
+  }
+  .menubutton h1{
+    text-align: center;
+    font-size: 2rem;
+  }
+  .menubutton p{
+    text-align: center;
+  }
+  .menuBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #containerDivision {
+    position: relative;
+    width: 100%; /* modify width as desired */
+    top: 45%;
+    margin: 0 auto; 
+    
+    /* transform: translateY(-80%);  */
+    /* overflow: scroll; */
+}
+.divi {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+}
+
+  .burgerContainer{
+    /* padding-top: 14px; */
+    display:grid;
+    grid-template-columns: 100%;
+    overflow: scroll;
+    
+  }
+  .priceCart{
+    padding-bottom: 20px;
+  }
+  .priceCart button{
+    height: 2.5rem;
+    width: 7rem;
+
+    border: none;
+    background-color: #201f1f;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    border-radius: 5px;
+
+  }
+}
+>>>>>>> b79e6b96f1a5b644f72b23b832c20314ba5371b9

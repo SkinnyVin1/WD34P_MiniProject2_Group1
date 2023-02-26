@@ -19,14 +19,13 @@
         <div class="logo"><a href="#"><h1>👑</h1><h1>PRINCE<br>BURGER</h1></a></div>
         <nav>
           <a href="index.html">Home</a>
-          <a href="menu.html">Menu</a>
+          <!-- <a href="menu.html">Menu</a> -->
           <a href="reserve.html">Reservation</a>
           <a href="offers.html">Location</a>
           <a href="career.html">Career</a>
-          <a href="team.html">Team</a>
         </nav>
         <div class="icons">
-          <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
           <a href="#"><i class="fa-solid fa-user-astronaut"></i></a>
         </div>
     </div>
@@ -38,7 +37,7 @@
       <img src="./images/hero-image.png" class="heroImg">
       <div class="menuHere">
         <div class="brokenLine">
-          <svg width="600" height="21" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <!-- <svg width="600" height="21" version="1.1" xmlns="http://www.w3.org/2000/svg"> -->
             <line stroke-dasharray="15, 10, 5, 10" x1="0" y1="10" x2="600" y2="10" style="stroke-width: 2px; stroke: rgb(255, 255, 255);"></line>
           </svg>
         </div>
@@ -86,11 +85,15 @@
         </div>
        
     </div>
+    <br id="menu">
+    <br>
+    <br>
+
     <!-- MENU -->
-    <div class="menuContainer" id="menu">
+    <div class="menuContainer" >
     
         <div class="menubutton">
-            <h1>Our Way, Our Menu</h1>
+            <h1 >Our Way, Our Menu</h1>
             <p>Our burgers are made with high-quality ingredients and packed with delicious flavors that will satisfy your taste buds. Here are some of our mouthwatering options:</p>
         <div class="menuBtn">
         <button id="tab-1" class="buttons">Burger</button>
@@ -104,13 +107,16 @@
             <div class="burgerContainer">
               <div class="cardWrapper">
                 <div class="card">
+                  <div class="price">
+                    <h3>₱109.00</h3>
+                  </div>
                     <img src="./images/Craft-beef-burger-with-cheese-png.png" alt="Avatar" style="width:100%">
                     <div class="container">
                       <h4><b>Classic Cheeseburger</b></h4> 
-                      <p>Juicy beef, melted cheese, and all the classic fixings</p> 
+                      <p>Juicy beef, melted cheese, and all the classic fixings</p>
                       <div class="priceCart">
-                        <h3>₱109.00</h3>
-                        <a><i class="fa-solid fa-cart-arrow-down"></i></a>
+                        <a><i class="fa-solid fa-basket-shopping"></i></a>
+                        <button id="orderNow" onclick="addToCart(`Classic Cheeseburger`, 109)">Order Now!</button>
                       </div>
                     </div>
                   </div>
@@ -118,13 +124,16 @@
                   <!--  -->
                   <div class="cardWrapper">
                   <div class="card">
+                     <div class="price">
+                    <h3>₱120.00</h3>
+                  </div>
                     <img src="./images/spicy chicken.png" alt="Avatar" style="width:100%">
                     <div class="container">
                       <h4><b>Spicy Chicken Burger</b></h4> 
                       <p>Spice up your life with a fiery chicken burger.</p> 
                       <div class="priceCart">
-                        <h3>₱109.00</h3>
-                        <a><i class="fa-solid fa-cart-arrow-down"></i></a>
+                        <a><i class="fa-solid fa-basket-shopping"></i></a>
+                        <button id="orderNow" onclick="addToCart(`Spicy Chicken Burger`, 120)">Order Now!</button>
                       </div>
                     </div>
                   </div>
@@ -132,13 +141,16 @@
                   <!--  -->
                   <div class="cardWrapper">
                   <div class="card">
+                     <div class="price">
+                    <h3>149.00</h3>
+                  </div>
                     <img src="./images/beef cheese burg.png" alt="Avatar" style="width:100%">
                     <div class="container">
                       <h4><b>Beef Cheese Burger</b></h4> 
                       <p>Pure satisfaction in every bite of this beefy, cheesy burger.</p> 
                       <div class="priceCart">
-                        <h3>₱109.00</h3>
-                        <a><i class="fa-solid fa-cart-arrow-down"></i></a>
+                       <a><i class="fa-solid fa-basket-shopping"></i></a>
+                        <button id="orderNow" onclick="addToCart(`Beef Cheese Burger`, 149)">Order Now!</button>
                       </div>
                     </div>
                   </div>
@@ -146,13 +158,16 @@
                   <!--  -->
                   <div class="cardWrapper">
                   <div class="card">
+                     <div class="price">
+                    <h3>168.00</h3>
+                  </div>
                     <img src="./images/bacon.png" alt="Avatar" style="width:100%">
                     <div class="container">
                       <h4><b>Bacon Burger</b></h4> 
                       <p>Indulge in savory satisfaction with every crispy, smoky bite.</p> 
                       <div class="priceCart">
-                        <h3>₱109.00</h3>
-                        <a><i class="fa-solid fa-cart-arrow-down"></i></a>
+                       <a><i class="fa-solid fa-basket-shopping"></i></a>
+                        <button id="orderNow" onclick="addToCart(`Bacon Burger`, 168)">Order Now!</button>
                       </div>
                     </div>
                   </div>
@@ -160,13 +175,16 @@
                   <!--  -->
                   <div class="cardWrapper">
                   <div class="card">
+                     <div class="price">
+                    <h3>209.00</h3>
+                  </div>
                     <img src="./images/PngItem_4272017.png" alt="Avatar" style="width:100%">
                     <div class="container">
                       <h4><b>BBQ Burger</b></h4> 
                       <p>Get ready to sink your teeth into smoky, saucy perfection.</p> 
                       <div class="priceCart">
-                        <h3>₱109.00</h3>
-                        <a><i class="fa-solid fa-cart-arrow-down"></i></a>
+                       <a><i class="fa-solid fa-basket-shopping"></i></a>
+                        <button id="orderNow" onclick="addToCart(`BBQ Burger`, 209)">Order Now!</button>
                       </div>
                     </div>
                   </div>
@@ -174,13 +192,16 @@
                   <!--  -->
                   <div class="cardWrapper">
                   <div class="card">
+                     <div class="price">
+                    <h3>99.00</h3>
+                  </div>
                     <img src="./images/chicken burger.png" alt="Avatar" style="width:100%">
                     <div class="container">
                       <h4><b>Chicken Burger</b></h4> 
                       <p>Upgrade your burger game with a succulent chicken patty.</p> 
                       <div class="priceCart">
-                        <h3>₱109.00</h3>
-                        <a><i class="fa-solid fa-cart-arrow-down"></i></a>
+                       <a><i class="fa-solid fa-basket-shopping"></i></a>
+                        <button id="orderNow" onclick="addToCart(`Chicken Burger`, 99)">Order Now!</button>
                       </div>
                     </div>
                   </div>
@@ -188,13 +209,16 @@
                   <!--  -->
                   <div class="cardWrapper">
                   <div class="card">
+                     <div class="price">
+                    <h3>339.00</h3>
+                  </div>
                     <img src="./images/P6GMEWP-x.png" alt="Avatar" style="width:100%">
                     <div class="container">
                       <h4><b>Black Beef Burger</b></h4> 
                       <p>Bold flavor, black bun - this burger means serious business.</p>  
                       <div class="priceCart">
-                        <h3>₱109.00</h3>
-                        <a><i class="fa-solid fa-cart-arrow-down"></i></a>
+                       <a><i class="fa-solid fa-basket-shopping"></i></a>
+                        <button id="orderNow" onclick="addToCart(`Black Beef Burger`, 339)">Order Now!</button>
                       </div>
                     </div>
                   </div> 
@@ -202,15 +226,442 @@
             </div>
         </div>
         <div id="div-2" class=" divi divi-2">
+          <div class="burgerContainer">
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/spicy chicken.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Spicy Chicken Burger</b></h4> 
+                    <p>Spice up your life with a fiery chicken burger.</p> 
+                    <div class="priceCart">
+                      <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/beef cheese burg.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Beef Cheese Burger</b></h4> 
+                    <p>Pure satisfaction in every bite of this beefy, cheesy burger.</p> 
+                    <div class="priceCart">
+                     <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/bacon.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Bacon Burger</b></h4> 
+                    <p>Indulge in savory satisfaction with every crispy, smoky bite.</p> 
+                    <div class="priceCart">
+                     <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/PngItem_4272017.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>BBQ Burger</b></h4> 
+                    <p>Get ready to sink your teeth into smoky, saucy perfection.</p> 
+                    <div class="priceCart">
+                     <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/chicken burger.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Chicken Burger</b></h4> 
+                    <p>Upgrade your burger game with a succulent chicken patty.</p> 
+                    <div class="priceCart">
+                     <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/P6GMEWP-x.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Black Beef Burger</b></h4> 
+                    <p>Bold flavor, black bun - this burger means serious business.</p>  
+                    <div class="priceCart">
+                     <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div> 
+                </div>
+                <div class="cardWrapper">
+                  <div class="card">
+                    <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/Craft-beef-burger-with-cheese-png.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Classic Cheeseburger</b></h4> 
+                        <p>Juicy beef, melted cheese, and all the classic fixings</p>
+                        <div class="priceCart">
+                          <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/spicy chicken.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Spicy Chicken Burger</b></h4> 
+                        <p>Spice up your life with a fiery chicken burger.</p> 
+                        <div class="priceCart">
+                          <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/beef cheese burg.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Beef Cheese Burger</b></h4> 
+                        <p>Pure satisfaction in every bite of this beefy, cheesy burger.</p> 
+                        <div class="priceCart">
+                         <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/bacon.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Bacon Burger</b></h4> 
+                        <p>Indulge in savory satisfaction with every crispy, smoky bite.</p> 
+                        <div class="priceCart">
+                         <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/PngItem_4272017.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>BBQ Burger</b></h4> 
+                        <p>Get ready to sink your teeth into smoky, saucy perfection.</p> 
+                        <div class="priceCart">
+                         <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/chicken burger.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Chicken Burger</b></h4> 
+                        <p>Upgrade your burger game with a succulent chicken patty.</p> 
+                        <div class="priceCart">
+                         <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/P6GMEWP-x.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Black Beef Burger</b></h4> 
+                        <p>Bold flavor, black bun - this burger means serious business.</p>  
+                        <div class="priceCart">
+                         <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div> 
+                    </div>
+          </div>
         </div>
         <div id="div-3" class=" divi divi-3">
+          <div class="burgerContainer">
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/beef cheese burg.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Beef Cheese Burger</b></h4> 
+                    <p>Pure satisfaction in every bite of this beefy, cheesy burger.</p> 
+                    <div class="priceCart">
+                     <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/bacon.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Bacon Burger</b></h4> 
+                    <p>Indulge in savory satisfaction with every crispy, smoky bite.</p> 
+                    <div class="priceCart">
+                     <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/PngItem_4272017.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>BBQ Burger</b></h4> 
+                    <p>Get ready to sink your teeth into smoky, saucy perfection.</p> 
+                    <div class="priceCart">
+                     <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/chicken burger.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Chicken Burger</b></h4> 
+                    <p>Upgrade your burger game with a succulent chicken patty.</p> 
+                    <div class="priceCart">
+                     <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!--  -->
+                <div class="cardWrapper">
+                <div class="card">
+                   <div class="price">
+                  <h3>₱109.00</h3>
+                </div>
+                  <img src="./images/P6GMEWP-x.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>Black Beef Burger</b></h4> 
+                    <p>Bold flavor, black bun - this burger means serious business.</p>  
+                    <div class="priceCart">
+                     <a><i class="fa-solid fa-basket-shopping"></i></a>
+                      <button id="orderNow">Order Now!</button>
+                    </div>
+                  </div>
+                </div> 
+                </div>
+                <div class="cardWrapper">
+                  <div class="card">
+                    <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/Craft-beef-burger-with-cheese-png.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Classic Cheeseburger</b></h4> 
+                        <p>Juicy beef, melted cheese, and all the classic fixings</p>
+                        <div class="priceCart">
+                          <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/spicy chicken.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Spicy Chicken Burger</b></h4> 
+                        <p>Spice up your life with a fiery chicken burger.</p> 
+                        <div class="priceCart">
+                          <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/beef cheese burg.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Beef Cheese Burger</b></h4> 
+                        <p>Pure satisfaction in every bite of this beefy, cheesy burger.</p> 
+                        <div class="priceCart">
+                         <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/bacon.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Bacon Burger</b></h4> 
+                        <p>Indulge in savory satisfaction with every crispy, smoky bite.</p> 
+                        <div class="priceCart">
+                         <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/PngItem_4272017.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>BBQ Burger</b></h4> 
+                        <p>Get ready to sink your teeth into smoky, saucy perfection.</p> 
+                        <div class="priceCart">
+                         <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/chicken burger.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Chicken Burger</b></h4> 
+                        <p>Upgrade your burger game with a succulent chicken patty.</p> 
+                        <div class="priceCart">
+                         <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <div class="cardWrapper">
+                    <div class="card">
+                       <div class="price">
+                      <h3>₱109.00</h3>
+                    </div>
+                      <img src="./images/P6GMEWP-x.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>Black Beef Burger</b></h4> 
+                        <p>Bold flavor, black bun - this burger means serious business.</p>  
+                        <div class="priceCart">
+                         <a><i class="fa-solid fa-basket-shopping"></i></a>
+                          <button id="orderNow">Order Now!</button>
+                        </div>
+                      </div>
+                    </div> 
+                    </div>
+          </div>
         </div>
     </div>
     </div>
     <!-- Phone Order -->
     <div class="intro">
       <div class="intro-image" data-aos="fade-right">
-          <img src="./images/phone.png">
+          <img id="phone" src="./images/phone.png">
       </div>
       <div class="intro-content" data-aos="fade-left">
           <h1>
@@ -218,26 +669,12 @@
           </h1>
           <p>Our mobile ordering system is user-friendly and secure, ensuring that your information and payment details are protected. Plus, you'll receive real-time updates on the status of your order and estimated time of arrival, so you can plan your day accordingly.</p>
           <p>So what are you waiting for? Download our mobile app or visit our website today to start ordering your favorite burgers with just a few taps on your phone!</p>
-          <button id="aboutUs">Order Now!</button>
+          <a href="#menu"><button id="aboutUs">Order Now!</button></a>
           <!-- <button id="phoneBtn"><i class="fa-solid fa-motorcycle"></i> Order To Deliver</button> -->
           <!-- <button id="phoneBtn"><i class="fa-solid fa-hand-holding-heart"></i> Order To Pickup</button> -->
 
               </div>
-     
-  </div>
-    <!-- <div class="phoneWrapper" >
-        <div class="phoneTextContent" data-aos="fade-right">
-            <h1>Dont Worry! You can order your food just by Phone</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                <button><i class="fa-solid fa-motorcycle"></i> Order To Deliver</button>
-                <button><i class="fa-solid fa-hand-holding-heart"></i> Order To Pickup</button>
-
-        </div>
-            <div class="phoneImage" data-aos="fade-up"><img src="./images/phone.png"></div>
-        </div> -->
-
+            </div>
         <!-- testimonials -->
         <div class="testimonialsWrapper"> 
             <div class="titleTest">
@@ -270,7 +707,7 @@
     <div class="newsPaperSection" id="newsPaper">
         <div class="newsDesc">
             <h1>GET EXCLUSIVE UPDATE</h1>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            <span>To receive the most recent updates and promotions, subscribe to our newspaper.</span>
         </div>
         <div class="newsForm">
             <input type="email" placeholder="Email">   
@@ -283,7 +720,7 @@
         <footer>
             <div class="logos" id="top">
                 <h1><a href="#"><h1>👑</h1><h1>PRINCE<br>BURGER</h1></h1><a></a>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</span>
+                <span>Experience Royalty in Every Bite: <br>Visit Prince Burger Today!</span>
                     
             </div>
             <div class="links">
@@ -292,6 +729,7 @@
                     <li><a href="reserve.html">Reservation</a></li>
                     <li><a href="offers.html">Offers</a></li>
                     <li><a href="career.html">Career</a></li>
+                    <li><a href="team.html">Team</a></li>
                 </ul>
             </div>
             <div class="contacts">
@@ -329,5 +767,6 @@
 <script>
     AOS.init();
   </script>
+<script src="cart.js"></script>
 <script src="script.js"></script>
 </html>
