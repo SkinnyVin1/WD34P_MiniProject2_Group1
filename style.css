@@ -1305,6 +1305,12 @@ MENU Section
   .rightS{
     display: flex;
   }
+  .rightS{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
   .cartcol{
     width: 70%;
   }
@@ -1331,7 +1337,7 @@ MENU Section
     display: flex ;
     justify-content: space-between;
     /* text-justify: start; */
-    /* align-items: center; */
+    align-items: center;
     /* overflow: scroll; */
  
   }
