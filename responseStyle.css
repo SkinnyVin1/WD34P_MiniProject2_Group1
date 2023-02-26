@@ -322,7 +322,6 @@
         .follow i {
             padding: 10px 5px;
         }
-<<<<<<< HEAD
     }   
 
 /* Location */
@@ -433,9 +432,7 @@
     width: 90%;
     margin-top: 40px;
   }
-}
-=======
-    }        
+}      
 
     /* Testimonials */
 /* For screens smaller than 600px */
@@ -484,14 +481,18 @@
 /* Menu */
 @media screen and (max-width: 767px) {
   .menuContainer{
-    height: 1260px;
+    height: 3800px;
+  }
+  .menubutton{
+    top: -75px;
   }
   .menubutton h1{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .menubutton p{
     text-align: center;
+    font-size: 0.8rem;
   }
   .menuBtn{
     width: 100%;
@@ -501,7 +502,7 @@
   #containerDivision {
     position: relative;
     width: 100%; /* modify width as desired */
-    top: 45%;
+    top: 20%;
     margin: 0 auto; 
     
     /* transform: translateY(-80%);  */
@@ -517,7 +518,7 @@
     /* padding-top: 14px; */
     display:grid;
     grid-template-columns: 100%;
-    overflow: scroll;
+    /* overflow: scroll; */
     
   }
   .priceCart{
@@ -536,4 +537,3 @@
 
   }
 }
->>>>>>> b79e6b96f1a5b644f72b23b832c20314ba5371b9

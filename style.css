@@ -637,7 +637,7 @@ footer h3{
 .contactDirectly{
     display: grid;
     grid-template-columns: 50% 50%;
-    text-align: center;
+    text-align: center !important;
 }
 .contactDirectly h3, .contactDirectly p{
     margin: 0;
@@ -794,6 +794,13 @@ input::-webkit-inner-spin-button {
 .mapVisit{
     padding-top: 30px;
     padding-bottom: 20px;
+}
+.mapVisit .mapP{
+    color: rgba(0, 0, 0, 0.484);
+    letter-spacing: 0.3rem;
+    margin-top: -10px;
+    width: 100%;
+    text-align: center;
 }
 .theMapLocation{
     position: absolute;
@@ -1062,20 +1069,17 @@ MENU
 ====================
  */
  .menuContainer {
-<<<<<<< HEAD
     margin-top: -5px;
-    height: 130vh;
+    /* height: 130vh; */
     background-color: #E1ad01;
-=======
-    height: 112vh;
+    height: 140vh;
     background-image:linear-gradient(to bottom right, #e1ad01e7, #e1ad01e7), url(./images/5193122.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     /* background-color: #E1ad01; */
->>>>>>> b79e6b96f1a5b644f72b23b832c20314ba5371b9
-    overflow: hidden;
-    padding-bottom: 20px;
+    /* overflow: hidden; */
+
   }
   
   #containerDivision {
@@ -1092,7 +1096,7 @@ MENU
     width: 100%;
     height: 800px;
     display: none;
-    top: 30%; /* vertically center the element */
+    top: -80px; /* vertically center the element */
     left: 50%; /* horizontally center the element */
     transform: translate(-50%, -70%); /* horizontally and vertically center the element */
   }
@@ -1117,10 +1121,9 @@ MENU
 
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
-    row-gap:40px;
+    row-gap:80px;
     text-align: center;
     justify-items: center;
-    overflow: scroll;
 
 }
 .price h3{
@@ -1131,22 +1134,24 @@ MENU
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: none;
-
+    background-color: #e1ad019e;
 
     justify-items: center;
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+    position: sticky;
+    top: -25px;
+    z-index: 99;
 }
 .cardWrapper{
 
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     height: auto;
-    border: rgba(255, 255, 255, 0.705) solid 5px;
-    border-radius: 10px;
+    /* border: 5px solid white; */
+    border-radius: 30px;
 }
 .card {
 
@@ -1171,9 +1176,9 @@ MENU
 		transform: scale(1.1);
 	}
 }
-  .container p{
+  /* .container p{
     font-size: .8rem;
-  }
+  } */
   .menuBtn button{
     border: none;
     width: 10rem;
@@ -1186,6 +1191,7 @@ MENU
     background: #313131;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
 
   }
   .menuBtn button:hover{
@@ -1210,11 +1216,14 @@ MENU
     margin: 0;
 }
 .container p{
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .priceCart i{
     font-size: 2rem;
 }
+/* .container h4{
+    margin-bottom: 10px;
+} */
 .priceCart a:hover{
     transition: 0.2s ease;
     color: white;
