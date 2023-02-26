@@ -21,11 +21,13 @@ function showCart() {
     cartContainer.innerHTML +=
       `
       <div class = "cartcol1">
-        
-        <h3 id='desc'> ${cartItems.productName}</h3>
+        <div class = 'leftS'>
+        <h3 id='desc'> ${cartItems.productName}</h3></div>
+        <div class ='rightS'>
         <p id='price'> <i class="fa-solid fa-peso-sign"></i>${cartItems.productPrice}.00</p>
 
         <button onclick="removeItem(${itemNumber})"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
       </div>
       `;
     totalAmount += cartItems.productPrice;
