@@ -67,6 +67,7 @@ tab3.addEventListener('click', showTab);
 
 let divis = document.querySelectorAll('.divi');
 let buttons = document.querySelectorAll('.buttons');
+let menuCon = document.querySelector("#menuCon").innerHTML;
 
 function showTab(event){
     // alert(event.target.id);
