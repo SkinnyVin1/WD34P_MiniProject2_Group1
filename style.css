@@ -1275,6 +1275,11 @@ MENU Section
     border-radius: 5px;
 
   }
+  .priceCart button:hover{
+    transition: .4s ease;
+    color: #201f1f;
+    background-color: white ;
+  }
 
   /* 
   ==================================
@@ -1296,6 +1301,9 @@ MENU Section
     align-items: center;
     justify-content:center ;
     /* justify-content: space-evenly; */
+  }
+  .rightS{
+    display: flex;
   }
   .cartcol{
     width: 70%;
@@ -1364,6 +1372,7 @@ MENU Section
     margin-right: 20px;
 }
 .totalWrap{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
