@@ -112,7 +112,7 @@ NAVBAR SECTION
 /* hero */
 @media (max-width: 767px){
   .heroWrapper{
-    height: 85vh;
+    height: 100vh;
     display: flex ;
   }
   .menuLink{
