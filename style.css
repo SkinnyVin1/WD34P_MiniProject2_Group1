@@ -38,15 +38,11 @@ body {
     z-index: 100;
     overflow: hidden;
 }
-label{
-    display: none;
-}
 .navBar{
     display: flex;
     justify-items: center;
     align-items: center;
     justify-content: space-between;
-
 
     padding-left: 50px;
     padding-right: 50px;
@@ -56,6 +52,9 @@ label{
     z-index: 1000;
     
 
+}
+.profile, .ekis{
+    display: none;
 }
 .logo{
     animation: logoEnt 0.8s ease 0s 1 normal forwards;

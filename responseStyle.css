@@ -4,25 +4,78 @@ NAVBAR SECTION
 =============================================
 */
 @media (max-width: 1032px){
-    nav{
-      /* display: none; */
+    .wraper{
+      position: fixed;
+      overflow:visible;
     }
-    .icons{
-      /* display: none; */
+    nav{
+      /* display: inline-block; */
+      position: absolute;
+      z-index: 10000;
+      background-color: white;
+      top: 0;
+      right: -100%;
+      grid-column-start: 3;
+      transition: 0.5s ease;
+      display: grid;
+      grid-template-columns: 100%;
+    }
+    .ekis{
+      color: #E1ad01;
+      cursor: pointer;
+      display: inline;
+    }
+    .ekis:hover{
+      color: black;
+    }
+    nav a{
+      color: #E1ad01;
+    }
+
+    #checkness{
+      display: none;
+    }
+    #checkness:checked ~ nav{
+      right: 0%;
+      transition: 0.5s ease
     }
     .navBar{
       padding: 0 20px 0 20px;
     }
+    .astronaut{
+      display: none;
+    }
+    .profile{
+      display: inline;
+    }
+    .navBarAddition{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+    }
   .navBar .phoneViewWrapper{
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     justify-items: center;
     padding:0 20px 0 20px;
   }
   .burgerBtn{
-    display: block;
+    display: inline;
+    grid-column-start: 2;
+    margin-right: -50px;
+    font-size: 2rem;
+    margin-top: 7px;
+    color: white;
+  }
+  .burgerAddition:hover{
+    color: black;
+    cursor: pointer;
+  }
+
+  .icons{
+    grid-row-start: 1;
+    margin-right: 10px;
   }
   .burgerBtn button{
     border: none;
