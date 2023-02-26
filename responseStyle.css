@@ -592,7 +592,7 @@ NAVBAR SECTION
 /* Menu */
 @media screen and (max-width: 767px) {
   .menuContainer{
-    height: 3800px;
+    height: 1200px;
   }
   .menubutton{
     top: -75px;
@@ -613,7 +613,7 @@ NAVBAR SECTION
   #containerDivision {
     position: relative;
     width: 100%; /* modify width as desired */
-    top: 20%;
+    top: 56%;
     margin: 0 auto; 
     
     /* transform: translateY(-80%);  */
