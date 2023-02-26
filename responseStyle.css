@@ -1,3 +1,61 @@
+/* 
+=============================================
+NAVBAR SECTION
+=============================================
+*/
+@media (max-width: 1032px){
+    nav{
+      /* display: none; */
+    }
+    .icons{
+      /* display: none; */
+    }
+    .navBar{
+      padding: 0 20px 0 20px;
+    }
+  .navBar .phoneViewWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding:0 20px 0 20px;
+  }
+  .burgerBtn{
+    display: block;
+  }
+  .burgerBtn button{
+    border: none;
+    background: none;
+
+    font-size: 1.5rem;
+    color: white;
+  }
+/* add class list */
+  .clickOn{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.3s;
+  }
+  .clickOn nav{
+    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+
+  }
+  .clickOn nav a{
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+  }
+  .clickOn .icons a{
+    padding: 0 20px 0 20px;
+  }
+}
+
+
 /* hero */
 @media (max-width: 767px){
   .heroWrapper{
