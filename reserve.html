@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responseStyle.css">
     <script src="https://kit.fontawesome.com/69a126a24e.js" crossorigin="anonymous"></script>
     <title>Prince Burger | Reservation</title>
     <link rel="icon" type="image/x-icon" href="./images/icon.ico">
@@ -38,8 +39,7 @@
             <div class="textContainer">
                 <div class="txtContent">
                     <h1>RESERVATION</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum similique qui ab aliquam? Facere quia nemo, fugiat libero, possimus modi eligendi aut,
-                    quas consectetur tempore nostrum praesentium velit eius! Quod.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum similique qui ab aliquam? Facere quia nemo, fugiat libero, possimus modi eligendi aut, quas consectetur tempore nostrum praesentium velit eius! Quod.</p>
                 </div>
             </div>
             <img src="./images/robert-bye-4UGlx_OXqgs-unsplash.jpg">  
@@ -47,38 +47,31 @@
     </div>
     <div class="body-content">
         <div class="reserveDetail">
-            <h3>RESERVATIONS DETAILS</h3>
+            <h1><i>RESERVATION DETAILS</i></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur temporibus enim quam dolore dolorum modi optio iure magnam dolor velit quod nihil, in nisi alias! Quasi nisi consequuntur labore?</p>
         </div>
         <div class="reserveContent">
             <div class="reserveForm">
                 <div class="reserveInfo">
                     <div class="input-box">
-                        <input type="text" required="required">
+                        <input type="text" required>
                         <label for="">Full Name</label>
                     </div>
                     <div class="input-box">
-                        <input type="number" required="required">
+                        <input type="number" required>
                         <label for="">Contact Number</label>
                     </div>
                     <div class="input-box">
-                        <input type="email" required="required">
+                        <input type="email" required>
                         <label for="">Email Address</label>
                     </div>
                     <div class="input-box">
-                        <input type="number" required="required">
+                        <input type="number" required>
                         <label for="">No. of people</label>
-                    </div>
-                    <div class="input-box franchiseDateTime">
-                        <input type="date" required="required">
-                        <label for="">Date</label>
-                    </div>
-                    <div class="input-box franchiseDateTime">
-                        <input type="time" required="required">
-                        <label for="">Time</label>
                     </div>
                 </div>
                 <div class="input-box reservationSelect">
-                    <select required="required">
+                    <select required>
                         <option value=""></option>
                         <option value="">Table 1</option>
                         <option value="">Table 2</option>
@@ -89,16 +82,32 @@
                     </select>
                     <label for="">Table</label>
                 </div>
-                <label for="">Comment</label>
-                <textarea></textarea>
-                <button>Reserve Now</button>
+                <div class="input-box reserveTextArea">
+                    <textarea required></textarea>
+                    <label for="">Message</label>
+                </div>
+                <div>
+                    <p><i>Note: The reservation will expire after 30 minutes of idle</i></p>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="">I accept the Terms and Conditions</label>
+                </div>
+                <button class="reserveBtn">Reserve Now</button>
             </div>
             <div class="reserveOnline">
                 <h1>RESERVE YOUR TABLE ONLINE</h1>
+                <div class="reserveImg">
+                    <img src="images/burger.jpg" alt="">
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, quis suscipit quo perferendis enim quae velit, temporibus, inventore ad atque iusto animi dicta ex ut perspiciatis placeat rerum repellat magnam!</p>
+                <br>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, quis suscipit quo perferendis enim quae velit, temporibus, inventore ad atque iusto animi dicta ex ut perspiciatis placeat rerum repellat magnam!</p>
+                <br>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, quis suscipit quo perferendis enim quae velit, temporibus, inventore ad atque iusto animi dicta ex ut perspiciatis placeat rerum repellat magnam!</p>
+                <br>
                 <h3>CONTACT US DIRECTLY</h3>
+                <br>
                 <div class="contactDirectly">
                     <div class="phone">
                         <h3>PHONE</h3>
@@ -111,7 +120,6 @@
                 </div>
             </div>
         </div>
-    
     </div>
     </div>
 

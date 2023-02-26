@@ -486,9 +486,9 @@ footer h3{
 
     position: absolute;
     width: 100%;
-    height: 100%;
+    height:45vh;
 
-    background-color: #424141c2;
+    background-color: #42414185;
     color: white;
 }
 .banner .imageContainer .textContainer .txtContent{
@@ -506,20 +506,15 @@ footer h3{
     object-fit: cover;
 }
 .body-content{
-    /* height: 85vh; */
     display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content:center;  
-}
-.reserveHeading{
-    text-align: center;
-    width: 50rem;
-    margin: auto;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    margin: 90px 0;
 }
 .reserveDetail{
     width: 85%;
-    /* margin: auto; */
+    margin-bottom: 20px;
 }
 .reserveContent{
     display: grid;
@@ -533,38 +528,37 @@ footer h3{
 }
 .reserveInfo{
     display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 20px;
-    row-gap: 20px;
+    grid-template-columns: 100%;
+    /* column-gap: 20px; */
+    row-gap: 30px;
 }
-.reserveInfo div input{
+.input-box input{
     width: 100%;
     height: 2rem;
     border-radius: 10px;
     outline: none;
     font-size: 1.2rem;
-    padding-top: 10px;
+    padding-top: 15px;
     text-indent: 10px;
-    border-color: rgba(0, 0, 0, 0.571);
-}
-.reserveInfo div{
-    margin-right: 20px;
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.571);
 }
 .input-box{
     position: relative;
 }
 .reservationSelect{
-    margin-top: 20px;
+    margin: 30px 0;
 }
 .input-box select{
     width: 101%;
-    height: 3rem;
+    height: 3.3rem;
     border-radius: 10px;
     outline: none;
     font-size: 1.2rem;
-    padding-top: 10px;
+    padding-top: 15px;
     text-indent: 10px;
     border-color: rgba(0, 0, 0, 0.571);
+    border-width: 2px;
 }
 .input-box label{
     position: absolute;
@@ -576,38 +570,88 @@ footer h3{
     transition: 0.3s ease;
     text-transform: uppercase;
 }
-.franchiseDateTime label{
-    transform: translateY(-22px);
-    font-size: 1rem;
-    margin-left: 12px;
-    letter-spacing: 0.2em;
-    background-color: white;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
 .input-box input:valid ~ label,
 .input-box input:focus ~ label{
-    transform: translateY(-22px);
+    transform: translateY(-26px);
     font-size: 1rem;
     margin-left: 12px;
     letter-spacing: 0.2em;
     background-color: white;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid #E1ad01;
+    border-right: 1px solid #E1ad01;
+}
+.input-box input:valid,
+.input-box input:focus,
+.input-box input:hover,
+.input-box select:valid,
+.input-box select:focus,
+.input-box select:hover,
+.reserveTextArea textarea:valid,
+.reserveTextArea textarea:focus,
+.reserveTextArea textarea:hover{
+    border-color: #E1ad01;
 }
 .input-box select:valid ~ label,
 .input-box select:focus ~ label{
-    transform: translateY(-22px);
+    transform: translateY(-26px);
     font-size: 1rem;
     margin-left: 12px;
     letter-spacing: 0.2em;
     background-color: white;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid #E1ad01;
+    border-right: 1px solid #E1ad01;
 }
 .reserveForm textarea{
     width: 100%;
     height: 10rem;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    text-indent: 10px;
+    border-color: rgba(0, 0, 0, 0.571);
+    border-width: 2px;
+}
+.reserveTextArea label{
+    position: absolute;
+    bottom: 77%;
+    pointer-events: none;
+    margin-left: 10px;
+    padding: 0 3px;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+.reserveTextArea textarea:valid ~ label,
+.reserveTextArea textarea:focus ~ label{
+    transform: translateY(-30px);
+    /* margin-left: 12px; */
+    letter-spacing: 0.2em;
+    background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.reserveBtn{
+    width: 200px;
+    height: 50px;
+
+    border: none;
+    background-color: #595959;
+    color: white;
+    border-radius: 10px;
+
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.reserveBtn:hover{
+    transition: ease-in-out 0.2s;
+    background-color: #E1ad01;
+    color: #313131;
+    box-shadow: 0px 0px 28px 7px rgba(0,0,0,0.16);
 }
 .reserveOnline{
     margin-top: -30px;
@@ -615,10 +659,15 @@ footer h3{
 .contactDirectly{
     display: grid;
     grid-template-columns: 50% 50%;
-    text-align: center;
+    text-align: center !important;
 }
 .contactDirectly h3, .contactDirectly p{
     margin: 0;
+}
+.reserveImg img{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
 }
 
 /* 
@@ -767,6 +816,13 @@ input::-webkit-inner-spin-button {
 .mapVisit{
     padding-top: 30px;
     padding-bottom: 20px;
+}
+.mapVisit .mapP{
+    color: rgba(0, 0, 0, 0.484);
+    letter-spacing: 0.3rem;
+    margin-top: -10px;
+    width: 100%;
+    text-align: center;
 }
 .theMapLocation{
     position: absolute;
@@ -1035,14 +1091,17 @@ MENU
 ====================
  */
  .menuContainer {
-    height: 112vh;
+    margin-top: -5px;
+    /* height: 130vh; */
+    background-color: #E1ad01;
+    height: 140vh;
     background-image:linear-gradient(to bottom right, #e1ad01e7, #e1ad01e7), url(./images/5193122.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     /* background-color: #E1ad01; */
-    overflow: hidden;
-    padding-bottom: 20px;
+    /* overflow: hidden; */
+
   }
   
   #containerDivision {
@@ -1059,7 +1118,7 @@ MENU
     width: 100%;
     height: 800px;
     display: none;
-    top: 30%; /* vertically center the element */
+    top: -80px; /* vertically center the element */
     left: 50%; /* horizontally center the element */
     transform: translate(-50%, -70%); /* horizontally and vertically center the element */
   }
@@ -1084,10 +1143,9 @@ MENU
 
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
-    row-gap:40px;
+    row-gap:80px;
     text-align: center;
     justify-items: center;
-    overflow: scroll;
 
 }
 .price h3{
@@ -1098,22 +1156,24 @@ MENU
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: none;
-
+    background-color: #e1ad019e;
 
     justify-items: center;
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+    position: sticky;
+    top: -25px;
+    z-index: 99;
 }
 .cardWrapper{
 
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     height: auto;
-    border: rgba(255, 255, 255, 0.705) solid 5px;
-    border-radius: 10px;
+    /* border: 5px solid white; */
+    border-radius: 30px;
 }
 .card {
 
@@ -1138,9 +1198,9 @@ MENU
 		transform: scale(1.1);
 	}
 }
-  .container p{
+  /* .container p{
     font-size: .8rem;
-  }
+  } */
   .menuBtn button{
     border: none;
     width: 10rem;
@@ -1153,6 +1213,7 @@ MENU
     background: #313131;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
 
   }
   .menuBtn button:hover{
@@ -1177,11 +1238,14 @@ MENU
     margin: 0;
 }
 .container p{
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .priceCart i{
     font-size: 2rem;
 }
+/* .container h4{
+    margin-bottom: 10px;
+} */
 .priceCart a:hover{
     transition: 0.2s ease;
     color: white;
