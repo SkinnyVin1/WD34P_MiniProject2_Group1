@@ -5,7 +5,7 @@ NAVBAR SECTION
 */
 @media (max-width: 1032px){
     .wraper{
-      position: sticky;
+      position: fixed;
       overflow:visible;
     }
     nav{
@@ -118,7 +118,7 @@ NAVBAR SECTION
 /* hero */
 @media (max-width: 767px){
   .heroWrapper{
-    height: 90vh;
+    height: 100vh;
     display: flex ;
   }
   .menuLink{
@@ -692,3 +692,6 @@ PROFILE PAGE
 }
 
 /* cart */
+.addtocrt{
+  height: 100vh;
+}
