@@ -5,28 +5,31 @@ NAVBAR SECTION
 */
 @media (max-width: 1032px){
     .wraper{
-      position: fixed;
+      position: sticky;
       overflow:visible;
     }
     nav{
       /* display: inline-block; */
+      width: 95%;
       position: absolute;
       z-index: 10000;
       background-color: white;
-      border: double 5px #E1ad01 ;
+      /* border: double 5px #E1ad01 ; */
       top: 0;
-      right: -100%;
+      right: -110%;
       grid-column-start: 3;
       transition: 0.5s ease;
       display: grid;
       grid-template-columns: 100%;
+      text-align: center;
     }
     .ekis {
       color: #E1ad01;
       cursor: pointer;
       display: inline;
-      text-align: center;
+      text-align: end;
       font-size: 2rem;
+      padding-right: 20px;
     }
     .ekis :hover{
       color: black;
@@ -687,3 +690,5 @@ PROFILE PAGE
     display: none;
   }
 }
+
+/* cart */
