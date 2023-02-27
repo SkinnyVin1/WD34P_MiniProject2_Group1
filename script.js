@@ -1,9 +1,22 @@
 // active navbar
 let nav = document.querySelector(".wraper");
 let navAdditional = document.querySelector(".wraperAddition");
+let navActive = document.querySelector(".navigationActive");
 let maps = document.querySelector(".mapLocation");
 
 window.onscroll = function () {
+    if(document.documentElement.scrollTop > 200){
+        maps.classList.add("mapActive");
+        setTimeout(function(){
+            maps.classList.add("mapBorder");
+        },5000);
+    }
+    if(document.documentElement.scrollTop > 50){
+        navActive.classList.add("navigationActiveAdditional");
+    }else{
+        navActive.classList.remove("navigationActiveAdditional");
+    };
+    
     if(document.documentElement.scrollTop > 50){
         nav.classList.add("scrollOn");
     }else{
@@ -16,12 +29,7 @@ window.onscroll = function () {
         navAdditional.classList.remove("scrollOnAdditional");
     };
 
-    if(document.documentElement.scrollTop > 200){
-        maps.classList.add("mapActive");
-        setTimeout(function(){
-            maps.classList.add("mapBorder");
-        },5000);
-    }
+
 }
 
 // Menu drawer

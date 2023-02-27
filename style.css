@@ -20,6 +20,12 @@ body {
     Navigation Bar Style
 ============================
 */
+.navigationActive{
+    color:  rgb(63, 63, 63);
+}
+.navigationActiveAdditional{
+    color: #E1ad01 !important;
+}
 .wraper{
     position: sticky;
     width:100%;
@@ -811,7 +817,7 @@ input::-webkit-inner-spin-button {
     transition: 2s ease;
 }
 .mapLocation.mapActive::before{
-    animation: rotate 5s linear infinite;
+    animation: rotate 5s linear infinite !important;
 }
 @keyframes rotate {
     0%{
@@ -1565,7 +1571,7 @@ profile
     /* position: relative; */
     /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: top; */ */
+    background-position: top; */
 }
 .bg img{
     width: 100%;
