@@ -83,4 +83,6 @@ function showTab(event){
 
     });
     document.querySelector('#tab-' + id).setAttribute('disabled', '');
+    // document.querySelector('#tab-' + id).classList.add('menuAdd');
+
 }

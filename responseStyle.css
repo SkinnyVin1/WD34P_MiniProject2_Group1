@@ -13,6 +13,7 @@ NAVBAR SECTION
       position: absolute;
       z-index: 10000;
       background-color: white;
+      border: double 5px #E1ad01 ;
       top: 0;
       right: -100%;
       grid-column-start: 3;
@@ -20,12 +21,14 @@ NAVBAR SECTION
       display: grid;
       grid-template-columns: 100%;
     }
-    .ekis{
+    .ekis {
       color: #E1ad01;
       cursor: pointer;
       display: inline;
+      text-align: center;
+      font-size: 2rem;
     }
-    .ekis:hover{
+    .ekis :hover{
       color: black;
     }
     nav a{
@@ -400,6 +403,17 @@ NAVBAR SECTION
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
     }
+    .newsForm button:hover{
+      animation: subs .3s ease 0s 1 normal forwards;    }
+    @keyframes subs {
+      0% {
+        transform: scale(1);
+      }
+    
+      100% {
+        transform: scale(1.1);
+      }
+    }
     
     .newsForm button i {
     padding-right: 5px;
@@ -555,6 +569,8 @@ NAVBAR SECTION
   .testimonial {
     width: 90%;
     padding: 10px;
+    display: flex;
+    row-gap: 20px;
   }
 }
 .testimonial img{
@@ -583,10 +599,16 @@ NAVBAR SECTION
 
   .testimonial {
     width: 80%;
+    display: flex;
+    justify-content: center;
+    row-gap: 20px;
+    justify-items: center;
+    align-items: center;
   }
   .testimonial img{
     width: 20%
   }
+
 }
 
 /* Menu */
@@ -646,5 +668,22 @@ NAVBAR SECTION
     font-style: italic;
     border-radius: 5px;
 
+  }
+}
+
+/* 
+==================================
+PROFILE PAGE
+==================================
+*/
+@media screen and (max-width: 767px){
+  .bg{
+    height: 100vh;
+    background-image: url(./images/mobilebg-01.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg img{
+    display: none;
   }
 }
